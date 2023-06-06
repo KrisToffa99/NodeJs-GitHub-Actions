@@ -25,8 +25,8 @@ jobs:
       - uses: mr-smithers-excellent/docker-build-push@v5
         name: Build & push Docker image
         with:
-          image: kriztoffa/python-github-actions
-          tags: v1, latest
+          image: kriztoffa/nodejs-github-actions
+          tags: latest
           registry: docker.io
           dockerfile: Dockerfile
           username: ${{ secrets.DOCKER_USERNAME }}
